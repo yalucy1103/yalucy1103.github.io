@@ -6,6 +6,7 @@ const links = [
   { href: "#field", label: "現場" },
   { href: "#projects", label: "專案" },
   { href: "#skills", label: "能力" },
+  { href: "#evidence", label: "證明" },
 ];
 
 export function Nav() {

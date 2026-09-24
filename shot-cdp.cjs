@@ -8,7 +8,7 @@ const http = require("http");
 const { execFile } = require("child_process");
 
 const OUT_URL = "http://127.0.0.1:4173/";
-const REVIEW = "C:/Users/Zonlic/Desktop/Lucy/.impeccable/review";
+const REVIEW = "D:/Desktop/Lucy/.impeccable/review";
 const CHROME = "C:/Program Files/Google/Chrome/Application/chrome.exe";
 const PORT = 9333;
 

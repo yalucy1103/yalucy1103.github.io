@@ -5,6 +5,7 @@ import { Journey } from "@/components/Journey";
 import { Field } from "@/components/Field";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
+import { Evidence } from "@/components/Evidence";
 import { Contact } from "@/components/Contact";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <Field />
         <Projects />
         <Skills />
+        <Evidence />
       </main>
       <Contact />
     </>
