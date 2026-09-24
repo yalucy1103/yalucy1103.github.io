@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-soft: var(--soft);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+
+  --font-sans: var(--font-noto), "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --font-display: var(--font-archivo), var(--font-noto), "Noto Sans TC", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
+}
+
+:root {
+  --paper: #fafaf7;
+  --ink: #1e1e1b;
+  --soft: #5d5d55;
+  --line: #e4e4dc;
+  --accent: #e8622c;
+  --accent-deep: #c2410c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #161615;
+    --ink: #edede7;
+    --soft: #a8a89e;
+    --line: #2c2c28;
+    --accent: #ff8a50;
+    --accent-deep: #ff8a50;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "palt";
+  text-rendering: optimizeLegibility;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
